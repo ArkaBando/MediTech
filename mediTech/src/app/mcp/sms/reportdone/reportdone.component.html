@@ -1,0 +1,56 @@
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+       <small>SMS PANEL FOR COMPLETED REPORTS</small>
+      </h1> 
+    </section>
+  
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+<div class="col-xs-12">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Report SMS Panel</h3>         
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <form name="frmSearchCustomer" method="post" action="">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Form Date</label>
+                            <input type="date" class="form-control" name="txtFormDate" id="txtFormDate" style="width: 100%;">
+                        </div> <!-- /.form-group -->
+                    </div> <!-- /.col -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label>To Date</label>
+                            <input type="date" class="form-control" name="txtToDate" id="txtToDate" style="width: 100%;">
+                        </div> <!-- /.form-group -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                        <div class="form-group">
+                            <br />
+                            <button type="button" class="btn btn-info btn-flat" id="btnsearch"><i class="fa fa-search"></i> Search</button>
+                            &nbsp;
+                            <button type="button" class="btn btn-success btn-flat" id="btnsend"><i class="fa fa-search"></i> Send</button>
+                            &nbsp;
+                            <button type="button" class="btn btn-danger btn-flat" id="btnreset"><i class="fa fa-refresh"></i>Not send</button>
+                        </div>
+                    </div> <!-- /.col -->
+                </form>
+            </div> <!-- ./row -->
+        </div>
+    </div>
+</div>
+<!-- /.col -->
+</div>
+      
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

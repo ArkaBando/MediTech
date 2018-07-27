@@ -1,0 +1,141 @@
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+           <small>enquiry control</small>
+          </h1> 
+        </section>
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery">
+                            <i class="fa fa-plus-circle"></i> Add Enquery
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <form name="frmSearchEnquery" method="post" action="">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Complain No</label>
+                                <select class="form-control" id="cmbComplainNo" name="ComplainNo" style="width: 100%;">
+                                    <option selected="selected">-- Select --</option>
+                                    <option value="1">086546565</option>
+                                    <option value="2">678787878</option>
+                                    <option value="3">876856868</option>
+                                </select>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select class="form-control" id="cmbStatus" name="Status" style="width: 100%;">
+                                    <option selected="selected">-- Select --</option>
+                                    <option value="1">High</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Low</option>
+                                </select>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col -->
+                        
+                       
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-right">
+                            <div class="form-group">
+                                <br />
+                                <button type="submit" class="btn btn-success" id="btnsearch"><i class="fa fa-search"></i> Search</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-danger" id="btnreset"><i class="fa fa-refresh"></i> Reset</button>
+                            </div>
+                        </div> <!-- /.col -->
+                    </form>
+                </div> <!-- ./row -->
+            </div>
+        </div>
+    </div>
+    <!-- /.col -->
+</div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Enquiry</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                        <input type="submit" name="btn-remove" id="btnremove" value="Delete All"  class="btn btn-danger pull-left footer-button">
+                  <table id="tblSupports" class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                                <th><input type="checkbox" name="chkall" id="checkedAll"></th>
+                            <th>Complain No</th>
+                              <th>Subject</th>
+                              <th>Message</th>
+                              <th>Status</th>
+                              <th>Priority</th>
+                              <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><input type="checkbox" name="chkall"></td>
+                                <td>013232</td>
+                                        <td>xfgfgdfgdfg</td>
+                                        <td>dfdsf</td>
+                                        <td>Open</td>
+                                        <td><span class="label label-success">High</span></td>
+                                        <td>
+                                            <div class="btn-group btn-group-xs">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                <td><input type="checkbox" name="chkall"></td>
+                                <td>0134564</td>
+                                <td>dfdsgf</td>
+                                <td>dfdsf</td>
+                                <td>Close</td>
+                                <td><span class="label label-danger">Low</span></td>
+                                        <td>
+                                            <div class="btn-group btn-group-xs">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                  </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+           
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->

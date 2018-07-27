@@ -1,0 +1,144 @@
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+           <small>Representative control</small>
+          </h1> 
+        </section>
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery">
+                            <i class="fa fa-plus-circle"></i> Add Representative
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <form name="frmSearchEnquery" method="post" action="">
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Representative Name</label>
+                                <select class="form-control" id="cmbRepresentative" name="Representative Name" style="width: 100%;">
+                                    <option selected="selected">-- Select --</option>
+                                    <option value="1">Protap Modal</option>
+                                    <option value="2">Suman Mukherjee</option>
+                                    <option value="3">Test</option>
+                                </select>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col -->
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="form-group">
+                              <label>Doctor Name</label>
+                              <select class="form-control" id="cmbDoctor" name="Doctor Name" style="width: 100%;">
+                                  <option selected="selected">-- Select --</option>
+                                  <option value="1">ABC</option>
+                                  <option value="2">Test</option>
+                                  <option value="3">Test2</option>
+                              </select>
+                          </div> <!-- /.form-group -->
+                      </div> <!-- /.col -->
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-right">
+                            <div class="form-group">
+                                <br />
+                                <button type="submit" class="btn btn-success" id="btnsearch"><i class="fa fa-search"></i> Search</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-danger" id="btnreset"><i class="fa fa-refresh"></i> Reset</button>
+                            </div>
+                        </div> <!-- /.col -->
+                    </form>
+                </div> <!-- ./row -->
+            </div>
+        </div>
+    </div>
+    <!-- /.col -->
+</div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Representative List</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                        <input type="submit" name="btn-remove" id="btnremove" value="Delete All"  class="btn btn-danger pull-left footer-button">
+                  <table id="tblSupports" class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="chkall" id="checkedAll"></th>
+                            <th>#ID</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Contact No</th>
+                              <th>Address</th>
+                              <th>Doctor Name</th>
+                              <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                        <td><input type="checkbox" name="chkall"></td>
+                                        <td>1</td>
+                                        <td>Protap Mondal</td>
+                                        <td>modal@gmail.com</td>
+                                        <td>875435465</td>
+                                        <td>By Pass</td>
+                                        <td>ABC</td>
+                                        <td>
+                                            <div class="btn-group btn-group-xs">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                <td><input type="checkbox" name="chkall"></td>
+                                <td>2</td>
+                                <td>Protap Mondal</td>
+                                <td>modal@gmail.com</td>
+                                <td>875435465</td>
+                                <td>By Pass</td>
+                                <td>ABC</td>
+                                        <td>
+                                            <div class="btn-group btn-group-xs">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                  </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+           
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->

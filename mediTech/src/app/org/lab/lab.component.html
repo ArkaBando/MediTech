@@ -1,0 +1,162 @@
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+           <small>Lab control</small>
+          </h1> 
+        </section>
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery">
+                            <i class="fa fa-plus-circle"></i> Add Lab
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <form name="frmSearchLab" method="post" action="">
+                       
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <select class="form-control" id="cmbLab" name="Lab Name" style="width: 100%;">
+                                    <option selected="selected">-- Select --</option>
+                                    <option value="1">Test</option>
+                                    <option value="2">Abc</option>
+                                    <option value="3">Test2</option>
+                                </select>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col -->
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select class="form-control" id="cmbStatus" name="Status" style="width: 100%;">
+                                    <option selected="selected">-- Select --</option>
+                                    <option value="1">Active</option>
+                                    <option value="2">Deactive</option>
+                                </select>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col -->
+                        
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-right">
+                            <div class="form-group">
+                                <br />
+                                <button type="submit" class="btn btn-success" id="btnsearch"><i class="fa fa-search"></i> Search</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-danger" id="btnreset"><i class="fa fa-refresh"></i> Reset</button>
+                            </div>
+                        </div> <!-- /.col -->
+                    </form>
+                </div> <!-- ./row -->
+            </div>
+        </div>
+    </div>
+    <!-- /.col -->
+</div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Lab List</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                        <input type="submit" name="btn-remove" id="btnremove" value="Delete All"  class="btn btn-danger pull-left footer-button">
+                  <table id="tblLabs" class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="chkall" id="checkedAll"></th>
+                            <th>#ID</th>
+                            <th>Name</th>
+                              <th>Email</th>
+                              <th>Contact No</th>
+                              <th>Address</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><input type="checkbox" name="chkall"></td>
+                                <td>1</td>
+                                <td>Test</td>
+                                <td>test@gmail.com</td>
+                                <td>875435465</td>
+                                <td>By Pass</td>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>
+                                        <div class="btn-group btn-group-xs">
+                                                <button type="button" class="btn btn-primary">Action</button>
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                                 </button>
+                                                 <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#"><i class="fa fa-edit text-blue"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="fa fa-trash text-red"></i>View</a></li>
+                                                    <li><a href="#"><i class="fa fa-minus-circle text-red"></i>Deactive</a></li>
+                                                    </ul>
+                                                    </div>
+                                </td>
+                            </tr>
+                                <tr>
+                                <td><input type="checkbox" name="chkall"></td>
+                                <td>2</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com</td>
+                                <td>865435462</td>
+                                <td>By Pass</td>
+                                <td><span class="label label-danger">Deactive</span></td>
+                                        <td>
+                                                <div class="btn-group btn-group-xs">
+                                                        <button type="button" class="btn btn-primary">Action</button>
+                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                         </button>
+                                                         <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="#"><i class="fa fa-edit text-blue"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="fa fa-trash text-red"></i>View</a></li>
+                                                            <li><a href="#"><i class="fa fa-minus-circle text-red"></i>Deactive</a></li>
+                                                            </ul>
+                                                            </div>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                  </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+           
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
