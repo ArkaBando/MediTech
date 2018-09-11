@@ -24,16 +24,19 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.min.css", 
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap-grid.min.css", 
               "src/assets/plugins/font-awesome/css/font-awesome.min.css",
               "src/assets/css/AdminLTE.min.css",
               "src/assets/css/skins/_all-skins.css",
               "src/assets/plugins/iCheck/square/blue.css",
               "src/assets/Ionicons/css/ionicons.min.css",
-              "src/assets/datatables.net-bs/css/dataTables.bootstrap.min.css",
+              "node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
+              "node_modules/datatables.net-select-bs/css/select.bootstrap.css",
               "src/assets/select2/dist/css/select2.min.css",
               "src/assets/bootstrap-daterangepicker/daterangepicker.css",
               "src/assets/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"
+              
             ],
             "scripts": [
               "src/assets/js/jquery.js",

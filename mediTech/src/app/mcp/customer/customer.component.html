@@ -11,22 +11,81 @@
         <!-- Main content -->
         <section class="content">
           <div class="row">
-    <div class="col-xs-12">
+    <div class="col-sm-12">
+            <div class="btn-group">
+                    <div class="container">
+                   
+                    <!-- Trigger the modal with a button -->
+                    
+                    <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-plus-circle"></i> Add Customer
+                        </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+               
+            </div>
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">Search</h3>   
                 <div class="box-tools pull-right">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery">
-                            <i class="fa fa-plus-circle"></i> Add Customer
-                        </button>
+                            <div class="container">
+                            
+                            <!-- Trigger the modal with a button -->
+                            
+                            <button type="button" class="btn btn-xs btn-primary" id="btn-new-enquery" data-toggle="modal" data-target="#myModal">
+                                    <i class="fa fa-plus-circle"></i> Add Customer
+                                </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+                              
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            
+                          </div>
+                       
                     </div>
                 </div>             
             </div>
            
             <div class="box-body">
                 <div class="row">
-                    <form name="frmSearchCustomer" method="post" action="">
+                    <form class="col-sm-12" name="frmSearchCustomer" method="post" action="">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="form-group">
                                 <label>Customer</label>
@@ -73,7 +132,7 @@
     <!-- /.col -->
     </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
               <div class="box">
                 <div class="box-header with-border">
                   <h3 class="box-title">Customer</h3>
@@ -99,7 +158,23 @@
                               <th>Action</th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+                              <tr *ngFor="let customer of customerList; let i = index">
+                                <td>{{customer.id}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                                <td>{{customer.firstName}}</td>
+                              </tr>
+                            </tbody>
                   </table>
                 </div>
                 <!-- /.box-body -->
